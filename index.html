@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+        <!-- Sets the character set to one that can display a wide range of     languages and symbols -->
+    <meta charset="utf-8">
+        <!-- Forces Internet Explorer to use the latest rending engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <!-- Tells your site to use all of the available space inside your browser windows, regardless of where the site is viewed. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 6 - Using CDNs</title>
+    
+    <!-- Latest compiled and minified CSS CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mystyle.css">
+    
+            <!-- Needed for Bootstrap to work properly on Internet Explorer 8 & 9 -->
+     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    
+    <!-- Navbar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container text-center"> <!-- Navbar container -->
+            <div class="nav navbar-header">
+                <a class="navbar-brand" href="#">My Site</a> 
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
+            </div> <!-- End navbar header -->
+            
+            <div id="myNavbar" class="collapse navbar-collapse"> <!-- Navbar collapse -->
+                <ul class="nav nav-tabs navbar-right ">
+                    <li class="active"><a href="#homeTab" data-toggle="tab">Home</a></li>
+                    <li><a href="#modalTab" data-toggle="tab">Modal</a></li>
+                    <li><a href="#mapTab" data-toggle="tab">Map</a></li>
+                    <li><a href="#carouselTab" data-toggle="tab">Carousel</a></li>
+                </ul>
+            </div>  <!-- End of Navbar collapse -->
+        </div> <!-- Navbar Carousel -->
+    </nav> <!-- End Navbar -->
+    
+        <!--Start Main Container-->
+    <div class="container container-body">
+        <div class="tab-content">  <!--Tabbed Panes-->
+                <!--Home Tab-->
+            <div class="tab-pane" id="homeTab">
+                <h1>Home Tab</h1>
+            </div>
+                <!--Modal Tab-->
+             <div class="tab-pane" id="modalTab">
+                <h1>Modal Tab</h1>
+                
+                <div class="row row-modal"><!--Row One-->
+                   <div class="col-sm-6">
+                       <a href="#modalOne" data-toggle="modal">
+                       <img class="img-responsive" src="http://via.placeholder.com/350x250">
+                       </a>
+                    </div>   
+                   <div class="col-sm-6">
+                       <a href="#modalTwo" data-toggle="modal">
+                       <img class="img-responsive" src="http://via.placeholder.com/350x250">
+                       </a>
+                   </div>
+                </div>
+                
+                <div class="row row-modal"><!--Row Two-->
+                   <div class="col-sm-6">
+                      <a href="#modalThree" data-toggle="modal">
+                       <img class="img-responsive" src="http://via.placeholder.com/350x250">
+                       </a>
+                    </div>   
+                   <div class="col-sm-6">
+                       <a href="#modalFour" data-toggle="modal">
+                       <img class="img-responsive" src="http://via.placeholder.com/350x250">
+                       </a>
+                   </div>
+                </div>
+                
+            </div>
+                <!--Map Tab-->
+             <div class="tab-pane" id="mapTab">
+                <h1>Map Tab</h1>
+            </div>
+                <!--Carousel Tab-->
+             <div class="tab-pane" id="carouselTab">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img class="img-responsive center-block" src="http://wednesday.startcomputing.org/manatee1.jpg" alt="...">
+      <div class="carousel-caption">
+        Manatee 1! He loves the water!
+      </div>
+    </div>
+    <div class="item">
+      <img class="img-responsive center-block"
+      src="http://wednesday.startcomputing.org/manatee2.jpg" alt="...">
+      <div class="carousel-caption">
+        Manatee 2! She loves the sea!
+      </div>
+    </div>
+    <div class="item">
+      <img class="img-responsive center-block" src="http://wednesday.startcomputing.org/manatee3.jpg" alt="...">
+      <div class="carousel-caption">
+        There's a new sheriff in town... Manatee 3!
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" ></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic"  data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" ></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+            </div>
+            
+        </div> <!--End Tabbed Panes-->
+        
+        <!--Modals Code-->
+            <!--Modal One-->
+        <div class="modal fade"  id="modalOne" role="dialog">
+            <div class="modal-dialog">
+              <img class="img-responsive" src="http://via.placeholder.com/500x400">  
+            </div>
+        </div> <!--End Modal One-->
+        <!--Modal Two-->
+        <div class="modal fade"  id="modalTwo" role="dialog">
+            <div class="modal-dialog">
+              <img class="img-responsive" src="http://via.placeholder.com/500x400">  
+            </div>
+        </div> <!--End Modal Two-->
+        <!--Modal Three-->
+        <div class="modal fade"  id="modalThree" role="dialog">
+            <div class="modal-dialog">
+              <img class="img-responsive" src="http://via.placeholder.com/500x400">  
+            </div>
+        </div> <!--End Modal Three-->
+        <!--Modal Four-->
+        <div class="modal fade"  id="modalFour" role="dialog">
+            <div class="modal-dialog">
+              <img class="img-responsive" src="http://via.placeholder.com/500x400">  
+            </div>
+        </div> <!--End Modal Four-->
+        
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus massa, lacinia nec interdum non, tincidunt vitae neque. Curabitur hendrerit bibendum congue. Ut scelerisque, sem vel efficitur gravida, nibh justo dapibus urna, in luctus eros nibh et tortor. Nullam augue nisi, fringilla eu semper nec, laoreet ut nulla. Aenean ut risus tristique, rhoncus libero sed, imperdiet orci. Cras augue ipsum, dapibus ut lacus nec, dignissim elementum dui. Curabitur velit lorem, vestibulum ac luctus sit amet, mollis eu libero. Donec pharetra dui sit amet posuere interdum. Nam tellus risus, sagittis nec ante ac, vestibulum consequat diam. Maecenas consequat consequat elit ut semper. Cras nec mi justo. Integer ut est sagittis, vehicula ligula et, condimentum quam. Suspendisse interdum tincidunt magna, id tincidunt justo.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus massa, lacinia nec interdum non, tincidunt vitae neque. Curabitur hendrerit bibendum congue. Ut scelerisque, sem vel efficitur gravida, nibh justo dapibus urna, in luctus eros nibh et tortor. Nullam augue nisi, fringilla eu semper nec, laoreet ut nulla. Aenean ut risus tristique, rhoncus libero sed, imperdiet orci. Cras augue ipsum, dapibus ut lacus nec, dignissim elementum dui. Curabitur velit lorem, vestibulum ac luctus sit amet, mollis eu libero. Donec pharetra dui sit amet posuere interdum. Nam tellus risus, sagittis nec ante ac, vestibulum consequat diam. Maecenas consequat consequat elit ut semper. Cras nec mi justo. Integer ut est sagittis, vehicula ligula et, condimentum quam. Suspendisse interdum tincidunt magna, id tincidunt justo.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus massa, lacinia nec interdum non, tincidunt vitae neque. Curabitur hendrerit bibendum congue. Ut scelerisque, sem vel efficitur gravida, nibh justo dapibus urna, in luctus eros nibh et tortor. Nullam augue nisi, fringilla eu semper nec, laoreet ut nulla. Aenean ut risus tristique, rhoncus libero sed, imperdiet orci. Cras augue ipsum, dapibus ut lacus nec, dignissim elementum dui. Curabitur velit lorem, vestibulum ac luctus sit amet, mollis eu libero. Donec pharetra dui sit amet posuere interdum. Nam tellus risus, sagittis nec ante ac, vestibulum consequat diam. Maecenas consequat consequat elit ut semper. Cras nec mi justo. Integer ut est sagittis, vehicula ligula et, condimentum quam. Suspendisse interdum tincidunt magna, id tincidunt justo.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus massa, lacinia nec interdum non, tincidunt vitae neque. Curabitur hendrerit bibendum congue. Ut scelerisque, sem vel efficitur gravida, nibh justo dapibus urna, in luctus eros nibh et tortor. Nullam augue nisi, fringilla eu semper nec, laoreet ut nulla. Aenean ut risus tristique, rhoncus libero sed, imperdiet orci. Cras augue ipsum, dapibus ut lacus nec, dignissim elementum dui. Curabitur velit lorem, vestibulum ac luctus sit amet, mollis eu libero. Donec pharetra dui sit amet posuere interdum. Nam tellus risus, sagittis nec ante ac, vestibulum consequat diam. Maecenas consequat consequat elit ut semper. Cras nec mi justo. Integer ut est sagittis, vehicula ligula et, condimentum quam. Suspendisse interdum tincidunt magna, id tincidunt justo.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus massa, lacinia nec interdum non, tincidunt vitae neque. Curabitur hendrerit bibendum congue. Ut scelerisque, sem vel efficitur gravida, nibh justo dapibus urna, in luctus eros nibh et tortor. Nullam augue nisi, fringilla eu semper nec, laoreet ut nulla. Aenean ut risus tristique, rhoncus libero sed, imperdiet orci. Cras augue ipsum, dapibus ut lacus nec, dignissim elementum dui. Curabitur velit lorem, vestibulum ac luctus sit amet, mollis eu libero. Donec pharetra dui sit amet posuere interdum. Nam tellus risus, sagittis nec ante ac, vestibulum consequat diam. Maecenas consequat consequat elit ut semper. Cras nec mi justo. Integer ut est sagittis, vehicula ligula et, condimentum quam. Suspendisse interdum tincidunt magna, id tincidunt justo.</p>
+    
+    </div> <!--End Main Container-->
+  
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" type="text/javascript"></script>
+</body>
+</html>
